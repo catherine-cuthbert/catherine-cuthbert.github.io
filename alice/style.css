@@ -1,0 +1,74 @@
+body {
+	background-color: lightblue
+}
+
+.chapter1 .unneeded {
+	visibility: hidden;
+}
+
+.chapter12 .unneeded{
+	visibility: hidden;
+}
+
+.one_half {     
+  width:460px;
+  position: relative;
+  }
+
+ img {
+ 	position: fixed;
+ 	left: 500px;
+ }
+
+	ul,
+	li { /*need both because browsers apply it differently*/
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		float: left; /*hack so they are side-by-side instead of one top of each other*/
+		display: inline-block;
+		background-color: #666;
+		width: 33.3%; /*the 3 elements each take up this much of the page*/
+	}
+
+	ul:after {
+		content: ""; /*float has ended*/
+		clear: both;
+		height: 0;
+		width: 0;
+		display: block;
+	}
+
+	a {
+		display: block;
+		background-color: lightblue;
+		color: purple;
+		text-align: center;
+		text-decoration: none;
+		font-size: 20;
+	}
+
+	a:hover {
+		color: blue;
+	}
+
+	a:active {
+		color: yellow;
+	}
+
+	h1 {
+		font-family: 'Lobster', cursive;
+		font-weight: bold;
+	}
+
+	.firstCharacter {
+		font-size: 80px;
+		font-family: 'Lobster', cursive;
+	}
+
+	.end {
+		padding-left: 200px;
+	}

@@ -1,0 +1,167 @@
+<html>
+<head>
+	<title>Portfolio</title>
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="http://code.jquery.com/color/jquery.color-2.1.2.min.js"></script>
+	<script src="jquery-easing.js"></script>
+	<script src="portfolio.js"></script>
+
+	<style>
+		body {
+			background-color: #ffdfc1;
+		}
+
+		h1 {
+			color: #690000;
+			font-size: 75;
+			text-align: center;
+			padding-top: 30px;
+		}
+
+		.navbar {
+			}
+
+			ul,
+			li {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+			}
+
+			li {
+				float: left;
+				display: inline-block;
+				width: 50%;
+			}
+
+			ul:after {
+				content: "";
+				clear: both;
+				height: 0;
+				width: 0;
+				display: block;
+			}
+
+			a {
+				display: block;
+				color: #690000;
+				font-size: 25;
+				text-align: center;
+				text-decoration: none;
+			}
+
+			.nav1 {
+				padding-left: 500px;
+			}
+
+			.nav2 {
+				padding-right: 500px;
+			}
+
+			.thumbnail {
+				padding-left: 0px;
+				margin-left: 100px;
+				width: 200px;
+				position: relative;
+				float: left;
+				cursor: pointer;
+			}
+
+			.thumbnail:before {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background: rgba(255,223,193, 0.5);
+				-moz-transition: background .3s linear;
+				-webkit-transition: background .3s linear;
+				-o-transition: background .3s linear;
+				transition: background .3s linear;
+			}
+
+			.thumbnail:hover:before {
+				background: none;
+			}
+
+			.alice {
+				background-color: #fff;
+			}
+
+			.portholes {
+				padding-top: 50px;
+				display: flex;
+				margin: 0 auto;
+				width: 975px;
+			}
+
+			.labels {
+				display: flex;
+				margin-left: 145px;
+			}		
+
+			p.description {
+				position: relative;
+				width: 180px;
+				height: 75px;
+				text-align: center;
+				line-height: 30px;
+				padding-top: 10px;
+				padding-left: 10px;
+				padding-right: 10px;
+				margin-left: 100px;
+				margin-top: -5px;
+				background-color: #8A233C;
+				color: #ffdfc1;
+			}
+	</style>
+</head>
+<body>
+	<h1> Ryn Cuthbert</h1>
+
+	<div class="navbar">
+		<ul>
+			<li>
+				<a href="index.html" class="nav1">Home</a>
+			</li>
+			<li>
+				<a href="portfolio.html" class="nav2">Portfolio</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="portholes">
+		<a href="snowflake/projectsnowflake.html" class="transition">
+			<span class="thumbnail">
+				<img src="snowflake/snowflake.jpg" width="200">
+			</span>
+		</a>
+
+		<a href="zombies/zombies.pdf">
+			<span class="thumbnail">
+				<img src="zombies/zombies.jpg" width="200">
+			</span>
+		</a>
+
+		<a href="alice/alice.html" class="transition">	
+			<span class="thumbnail alice">
+				<img src="alice/alice.jpg" height="200">
+			</span>
+		</a>
+	</div>
+
+	<div class="labels">
+		<p class="description">Project Snowflake: Hackathon group project</p>
+
+		<p class="description">UI Class Project</p>
+
+		<p class="description alice">Alice in Wonderland HTML & CSS Project</p>
+	</div>
+
+	<footer>
+
+	</footer>
+</body>
+</html>
