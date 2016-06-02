@@ -53,16 +53,61 @@
 				padding-right: 500px;
 			}
 
-			.box {
-				background-color: #CB6866;
-				color: #FFCBAC;
-				width: 500px;
-				height: 275px;
-				margin-left: 400px;
-				margin-top: 50px;
-				padding-top: 25px;
-				text-align: center;
+			.thumbnail {
+				padding-left: 0px;
+				margin-left: 100px;
+				width: 200px;
+				position: relative;
+				float: left;
+				cursor: pointer;
 			}
+
+			.portholes {
+				padding-top: 50px;
+				display: flex;
+				margin: 0 auto;
+				width: 975px;
+			}
+
+			.thumbnail:before {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background: rgba(255,223,193, 0.5);
+				-moz-transition: background .3s linear;
+				-webkit-transition: background .3s linear;
+				-o-transition: background .3s linear;
+				transition: background .3s linear;
+			}
+
+			.thumbnail:hover:before {
+				background: none;
+			}
+
+			.labels {
+				display: flex;
+				margin-left: 145px;
+			}		
+
+			p.description {
+				position: relative;
+				width: 180px;
+				height: 75px;
+				text-align: center;
+				line-height: 30px;
+				padding-top: 10px;
+				padding-left: 10px;
+				padding-right: 10px;
+				margin-left: 100px;
+				margin-top: -5px;
+				background-color: #8A233C;
+				color: #ffdfc1;
+			}
+
 	</style>
 </head>
 <body>
@@ -79,8 +124,30 @@
 		</ul>
 	</div>
 
-	<div class="box">
-		<p>PLACEHOLDER</p>
+
+	<div class="portholes">	
+		<a href="resume.pdf">
+			<span class="thumbnail">
+				<img src="resume.jpg" height="200">
+			</span>
+
+		<a href="transcript.pdf">
+			<span class="thumbnail">
+				<img src="transcript.jpg" height="200">
+			</span>
+
+		<a href="letter.pdf">
+			<span class="thumbnail">
+				<img src="letter.jpg" height="200">
+			</span>
+	</div>
+
+	<div class="labels">
+		<p class="description">Resume</p>
+
+		<p class="description">Transcript</p>
+
+		<p class="description alice">Cover Letter</p>
 	</div>
 
 </body>
